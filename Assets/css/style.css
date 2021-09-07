@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(241,133,138);
+background: radial-gradient(circle, rgba(241,133,138,1) 0%, rgba(152,84,87,1) 0%, rgba(24,13,14,1) 86%, rgba(0,0,0,1) 100%);
+    height: 100vh;
+    
+    flex-direction: column;
+}
+marquee{
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: 'Cookie', cursive;
+}
+.text{
+    position: relative;
+    -webkit-box-reflect: below -25px linear-gradient(
+        transparent, rgb(0 0 0 / 18%));
+        text-align: center;
+        letter-spacing: 6px;
+        line-height: auto;
+}
+
+.text span{
+    position: relative;
+    display: inline-block;
+    background: #CFE7fA;
+background: -webkit-linear-gradient(to right, #CFE7fA 0%, #6393C1 100%);
+background: -moz-linear-gradient(to right, #CFE7fA 0%, #6393C1 100%);
+background: linear-gradient(to right, #CFE7fA 0%, #6393C1 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+    font-size: 60px;
+    animation: animate 1s ease-in-out infinite;
+    animation-delay: calc(20ms * var(--i));
+}
+.B{
+    font-size: 130px !important;
+    background: #FFB76B !important;
+background: -webkit-linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%) !important;
+background: -moz-linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%) !important;
+background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%) !important;
+-webkit-background-clip: text !important;
+-webkit-text-fill-color: transparent !important;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    40%,100%{
+        transform: translateY(0px);
+    }
+}
